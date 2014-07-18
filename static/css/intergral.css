@@ -1,0 +1,185 @@
+#intergral-wrapper{
+    width: 200px;
+    height: 250px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: -125px;
+    font-family: 'Helvetica Neue', Helvetica, "Hiragino Sans GB", "PMingLiU", "Microsoft YaHei", "SimSun", Arial, Sans-serif;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.score-add,.lv-role{
+    width :100%;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    font-size: 0;
+    -webkit-transition: -webkit-transform 1s;
+    transition: transform 1s;
+}
+
+.score-add{
+    z-index: 2;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.lv-role{
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    z-index: 1;
+}
+
+.lv-num,.add-score {
+    width: 100%;
+    position: absolute;
+    font-size: 26px;
+    z-index: 100;
+}
+
+.lv-num{
+    top: 82px;
+}
+
+.add-score{
+    top: 16px;
+}
+
+.score-add img{
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.floor-circle,.round-circle,.color-circle,.color-change{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    margin-right: 50%;
+    height: 100%;
+}
+
+.floor-circle{
+    border-radius:100px 0 0 100px;
+    background-color: #38b1d9;
+}
+
+.color-circle,.color-change {
+    border-radius: 0px 100px 100px 0;
+    margin: 0 0 0 50%;
+}
+
+.score_welcome .floor-circle,.score_welcome .color-circle{
+    background-color: #38b1d9;
+}
+
+.score_quot .floor-circle,.score_quot .color-circle{
+    background-color: #5293c9;
+}
+
+.score_camera .floor-circle,.score_camera .color-circle{
+    background-color: #49bba8;
+}
+
+.score_complete .floor-circle,.score_complete .color-circle{
+    background-color: #73cbe2;
+}
+.score_complete .floor-circle,.score_complete .color-circle{
+    background-color: #55c3e9;
+}
+.score_money .floor-circle,.score_money .color-circle{
+    background-color: #60e8c8;
+}
+
+.score_heart .floor-circle,.score_heart .color-circle{
+    background-color: #f7e467;
+}
+
+.round-circle{
+    border-radius:100px 0 0 100px;
+    -webkit-transform-origin: 100% 101px;
+    transform-origin: 100% 50%;
+}
+
+.round-circle,.color-change{
+    background-color: #e45647;
+}
+
+.score_certi .round-circle,.score_certi .color-change{
+    background-color: #ffcf00;
+}
+
+.rotate{
+    -webkit-transition: -webkit-transform 1s;
+    transition: transform 1s;
+}
+
+.score-desc,.role-desc{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+}
+
+.score-desc span,.role-desc span{
+    text-indent: -99em;
+    display: block;
+    height: 28px;
+    width: 166px;
+    margin: 20px auto 0;
+}
+
+.score-desc span{
+    background: transparent url(../image/intergral_pic/score_desc.png);
+}
+.role-desc span{
+    background: transparent url(../image/intergral_pic/role_desc.png);
+}
+
+.score_welcome .score-desc span{
+    background-position: 0 0;
+}
+.score_quot .score-desc span{
+    background-position: 0 -28px;
+}
+.score_camera .score-desc span{
+    background-position: 0 -56px;
+}
+.score_complete .score-desc span {
+    background-position: 0 -84px;
+}
+.score_certi .score-desc span {
+    background-position: 0 -112px;
+}
+.score_money .score-desc span {
+    background-position: 0 -140px;
+}
+.score_heart .score-desc span {
+    background-position: 0 -168px;
+}
+
+.role_lv2 .role-desc span{
+    background-position: 0 0px;
+}
+.role_lv6 .role-desc span{
+    background-position: 0 -28px;
+}
+.role_lv8 .role-desc span{
+    background-position: 0 -56px;
+}
+.role_lv11 .role-desc span{
+    background-position: 0 -84px;
+}
+.role_boss .role-desc span{
+    background-position: 0 -112px;
+}
+
+.hide{
+    display: none;
+}
